@@ -29,7 +29,7 @@ deploy:
 >
 > appid在腾讯云控制台右上角 【腾讯云用户名】>账户信息>基本信息 中可以查看，如果您已经创建bucket，控制台显示的name-125xxxxx 格式的bucket名称中，name部分为我们需要配置的cosBucket的值，125xxxxx就是appid
 >
-> 新版本COS SDK已将appid参数废弃，合并到bucket参数中，但为便于部署工具在用户未创建bucket时直接使用部署工具创建bucket，我们仍将使用appid参数
+> 需要说明的是新版本的腾讯云COS SDK已将appid参数废弃，合并到bucket参数中，但为便于部署工具在用户未创建bucket时直接使用部署工具创建bucket，我们仍将使用appid参数
 
 
 
