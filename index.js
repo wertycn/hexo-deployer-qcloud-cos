@@ -1,3 +1,3 @@
 'use strict'
 
-hexo.extend.deployer.register('tencent-cos', require('./lib/deployer'))
+hexo.extend.deployer.register('qcould-cos', require('./lib/deployer'))

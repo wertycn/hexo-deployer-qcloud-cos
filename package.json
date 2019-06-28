@@ -1,7 +1,7 @@
 {
   "name": "hexo-deployer-qcloud-cos",
-  "version": "1.0.0",
-  "description": " hexo腾讯云COS一键部署工具hexo-deployer-qcloud-cos使用说明",
+  "version": "1.0.1",
+  "description": " hexo腾讯云COS一键部署工具hexo-deployer-qcloud-cos",
   "main": "index.js",
   "directories": {
     "lib": "lib"
