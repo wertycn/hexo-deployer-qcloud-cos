@@ -1,20 +1,49 @@
 {
-  "name": "hexo-deployer-qcloud-cos",
-  "version": "1.0.1",
+  "_from": "hexo-deployer-qcloud-cos@^1.0.1",
+  "_id": "hexo-deployer-qcloud-cos@1.0.2",
+  "_inBundle": false,
+  "_integrity": "sha512-ucmhZ857ls6VajmY/3x8fnAUVOvV7/XYW1Ae10fRHc1vs95BAu0cOKSoER2cxozt9VIBSMqt3tu19AOwzSAPHA==",
+  "_location": "/hexo-deployer-qcloud-cos",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "range",
+    "registry": true,
+    "raw": "hexo-deployer-qcloud-cos@^1.0.1",
+    "name": "hexo-deployer-qcloud-cos",
+    "escapedName": "hexo-deployer-qcloud-cos",
+    "rawSpec": "^1.0.1",
+    "saveSpec": null,
+    "fetchSpec": "^1.0.1"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/hexo-deployer-qcloud-cos/-/hexo-deployer-qcloud-cos-1.0.2.tgz",
+  "_shasum": "ec089ae402b4f45c8a67b2238657ecb886041ac7",
+  "_spec": "hexo-deployer-qcloud-cos@^1.0.1",
+  "_where": "D:\\dev\\werty\\blog",
+  "author": {
+    "name": "hajnxg@126.com"
+  },
+  "bugs": {
+    "url": "https://github.com/wertycn/hexo-deployer-qcloud-cos/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "chalk": "^2.4.2",
+    "cos-nodejs-sdk-v5": "^2.5.9",
+    "fs": "0.0.1-security",
+    "inquirer": "^6.4.1",
+    "path": "^0.12.7",
+    "rd": "^2.0.1"
+  },
+  "deprecated": false,
   "description": " hexo腾讯云COS一键部署工具hexo-deployer-qcloud-cos",
-  "main": "index.js",
   "directories": {
     "lib": "lib"
   },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "hajnxg@126.com",
-  "license": "MIT",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/wertycn/hexo-deployer-qcloud-cos.git"
-  },
+  "homepage": "https://github.com/wertycn/hexo-deployer-qcloud-cos#readme",
   "keywords": [
     "hexo",
     "deployer",
@@ -23,15 +52,15 @@
     "腾讯云",
     "hexo部署器"
   ],
-  "bugs": {
-    "url": "https://github.com/wertycn/hexo-deployer-qcloud-cos/issues"
+  "license": "MIT",
+  "main": "index.js",
+  "name": "hexo-deployer-qcloud-cos",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wertycn/hexo-deployer-qcloud-cos.git"
   },
-  "homepage": "https://github.com/wertycn/hexo-deployer-qcloud-cos#readme",
-  "dependencies": {
-    "chalk": "^2.4.2",
-    "cos-nodejs-sdk-v5": "^2.5.9",
-    "inquirer": "^6.4.1",
-    "path": "^0.12.7",
-    "rd": "^2.0.1"
-  }
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "version": "1.0.3"
 }

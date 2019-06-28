@@ -10,7 +10,7 @@
 
 ```
 deploy:
-    type: tencent-cos
+    type: qcloud-cos
     cosRegion: <您的cos bucket所在区域代码>
     cosSecretId: <您的cos accessKeyId>
     cosSecretKey: <您的cos accessKeySecret>
