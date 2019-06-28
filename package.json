@@ -1,0 +1,37 @@
+{
+  "name": "hexo-deployer-qcloud-cos",
+  "version": "1.0.0",
+  "description": " hexo腾讯云COS一键部署工具hexo-deployer-qcloud-cos使用说明",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "hajnxg@126.com",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wertycn/hexo-deployer-qcloud-cos.git"
+  },
+  "keywords": [
+    "hexo",
+    "deployer",
+    "qcloud",
+    "cos",
+    "腾讯云",
+    "hexo部署器"
+  ],
+  "bugs": {
+    "url": "https://github.com/wertycn/hexo-deployer-qcloud-cos/issues"
+  },
+  "homepage": "https://github.com/wertycn/hexo-deployer-qcloud-cos#readme",
+  "dependencies": {
+    "chalk": "^2.4.2",
+    "cos-nodejs-sdk-v5": "^2.5.9",
+    "inquirer": "^6.4.1",
+    "path": "^0.12.7",
+    "rd": "^2.0.1"
+  }
+}
