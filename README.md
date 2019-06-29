@@ -16,9 +16,11 @@ deploy:
     cosSecretKey: <您的cos accessKeySecret>
     cosBucket: <您的cos bucket名称>
     cosAppid:  <您的腾讯云账户appid>
+    remotePath: <您要部署的目录,默认为根目录,默认无需设置>
   
 ```
 
+<!-- more -->
 注意：
 
 > COS术语请参考 [COS术语信息](https://cloud.tencent.com/document/product/436/7751)
@@ -39,29 +41,22 @@ deploy:
 hexo d
 ```
 
-注意：
+说明：
 
-> 1. 通过此部署工具上传的文件默认指定权限为 `public-read`即公共读私有写,便于公网用户访问博客内容  
+> 1. 默认情况下，将文件上传到bucket的根目录下，如果需要部署到其他目录，请在deploy下添加remotePath选项进行指定
 >
-> 2. 默认情况下，将文件上传到bucket的根目录下，如果需要部署到其他目录，请在deploy下添加remotePath选项进行指定
->
->    ```
->    remotePath: <您要部署的目录,默认为/>
->    ```
+> ```
+> remotePath: <您要部署的目录,默认为根目录>
+> ```
 >
 > 3. 执行`hexo d`命令后，部署工具会检查bucket是否存在及是否具备访问权限，如果bucket不存在，命令行将进行创建bucket确认，回复y后将按照配置文件中的设置创建一个新的bucket
+> 4. 部署工具自动创建的bucket 默认权限为  `public-read`即公共读私有写 ，bucket中的对象如果不指定权限将继承bucket的权限。如果需要修改默认创建的bucket权限，请在配置中添加bucketAcl选项进行指定。请注意，如果将bucket访问权限设置为private，COS部署静态网站的索引文档功能将失效（即使对象的权限是可以公开访问的）
 >
-> 4. 部署工具自动创建的bucket 默认权限为 `private` 即私有读写，bucket中的对象如果不指定权限将继承bucket的权限。如果需要修改，请在配置中添加bucketAcl选项指定bucket权限
+> ```
+> bucketAcl: <自动创建的bucket权限 仅可设置为 private , public-read , public-read-write> 
+> ```
 >
->    ```
->    bucketAcl: <自动创建的bucket权限 仅可设置为 private , public-read , public-read-write> 
->    ```
->
-> 5. 对bucket权限的修改不会影响通过部署工具上传的文件的权限，通过部署工具上传的文件均已指定权限为`public read`,如确有必要修改上传文件的权限，请在配置文件中添加`objectAcl`选项指定
->
->    ```
->    objectAcl: <部署工具上传的文件权限 仅可设置为 private , public-read , public-read-write>
->    ```
+> > 由于腾讯云COS当前访问策略条目限制为1000条，所以取消文件权限设置参数，通过此部署工具上传的文件将继承bucket的权限（v1.0.4更新）
 
 首次在腾讯云COS部署hexo 博客后，您还需要在控制台进行一些相关的设置，具体请参考[COS域名管理](https://cloud.tencent.com/document/product/436/18424)及[COS设置静态网站](https://cloud.tencent.com/document/product/436/14984)
 
