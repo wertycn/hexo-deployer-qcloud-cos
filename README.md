@@ -1,5 +1,7 @@
 # hexo腾讯云COS一键部署工具hexo-deployer-qcloud-cos使用说明
 
+[使用腾讯云COS部署HEXO博客教程](http://werty.cn/2019/06/hexo/%E8%85%BE%E8%AE%AF%E4%BA%91COS%E5%AF%B9%E8%B1%A1%E5%AD%98%E5%82%A8%E9%83%A8%E7%BD%B2hexo%E5%8D%9A%E5%AE%A2%E5%B9%B6%E5%AE%9E%E7%8E%B0%E4%B8%80%E9%94%AE%E9%83%A8%E7%BD%B2/)
+
 在您的hexo项目目录下执行：
 
 ```
